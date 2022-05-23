@@ -57,7 +57,7 @@
     		letter-spacing: 1px;
             font-size: 14px;
             color: #121F48;
-            font-weight: 800px;
+            font-weight: 800;
             text-transform: uppercase;
             
         }  	
@@ -77,6 +77,8 @@
             justify-content: center;
             border: 1px solid red;
             flex-direction: column;
+            color: #121F48;
+
 
         }
         .contenedor-header > .header-text > a {
@@ -92,7 +94,7 @@
             border-radius: 30px;
             color: white;
             font-size: bold;
-            font-weight: 800px;
+            font-weight: 800;
             text-decoration: none;
             font-family: "Helvetica", Sans-serif;
         }
@@ -122,10 +124,11 @@
         /*secciones*/
 
         .contenedor-secciones {
-        	width: 100%;
+        	width: 90%;
         	display: flex;
         	align-items: center;
         	justify-content: center;
+        	margin: 0 auto;
         	
         }
         .contenedor-secciones > .secciones-1 {
@@ -134,6 +137,26 @@
         	align-items: center;
         	justify-content: center;
         	flex-direction: column;
+        	border: 1px solid grey;
+        	border-radius: 10px;
+
+        	
+        }
+        .contenedor-secciones > .secciones-1 > img {
+        	width: 100%;
+        }
+        .contenedor-secciones > .secciones-1 > p {
+        	padding: 20px;
+        	text-align: center;
+        	font-size: 20px;
+        	font-weight: 600px;
+        }
+        .contenedor-secciones > .secciones-1 > a {
+        	color: #e41f7b;
+        	text-decoration: none;
+        	font-size: 20px;
+        	padding-bottom: 20px;
+        	font-weight: 800;
         }
         .contenedor-secciones > .secciones-2 {
         	width: 33%;
@@ -141,6 +164,25 @@
         	align-items: center;
         	justify-content: center;
         	flex-direction: column;
+        	border: 1px solid grey;
+        	border-radius: 10px;
+
+        }
+        .contenedor-secciones > .secciones-2 > img {
+        	width: 100%;
+        }
+        .contenedor-secciones > .secciones-2 > p {
+        	padding: 20px;
+        	text-align: center;
+        	font-size: 20px;
+        	font-weight: 600px;
+        }
+        .contenedor-secciones > .secciones-2 > a {
+        	color: #e41f7b;
+        	text-decoration: none;
+        	font-size: 20px;
+        	padding-bottom: 20px;
+        	font-weight: 800;
         }
         .contenedor-secciones > .secciones-3 {
         	width: 33%;
@@ -148,8 +190,26 @@
         	align-items: center;
         	justify-content: center;
         	flex-direction: column;
-        }
+        	border: 1px solid grey;
+        	border-radius: 10px;
 
+        }
+        .contenedor-secciones > .secciones-3 > img {
+        	width: 100%;
+        }
+        .contenedor-secciones > .secciones-3 > p {
+        	padding: 20px;
+        	text-align: center;
+        	font-size: 20px;
+        	font-weight: 600px;
+        }
+        .contenedor-secciones > .secciones-3 > a {
+        	color: #e41f7b;
+        	text-decoration: none;
+        	font-size: 20px;
+        	padding-bottom: 20px;
+        	font-weight: 800;
+        }
         /*end secciones*/
 	</style>
 
@@ -191,37 +251,40 @@
 
 	<div class="contenedor-secciones">
 		<div class="secciones-1">
-			<img src="">
+			<img src="seccion-1.svg">
 			<h1>
-				titulo
+				PPC
 			</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			</p>
+			<a href="">titulo</a>
 		</div>
 		<div class="secciones-2">
-			<img src="">
+			<img src="seccion-2.svg">
 			<h1>
-				titulo
+				SEO
 			</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			</p>
+			<a href="">titulo</a>
 		</div>
 		<div class="secciones-3">
-			<img src="">
+			<img src="seccion-3.svg">
 			<h1>
-				titulo
+				Estrategia Digital
 			</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			</p>
+			<a href="">titulo</a>
 		</div>
 	</div>
 
