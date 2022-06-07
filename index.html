@@ -30,7 +30,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid black;
+            
             
         }
         .contenedor-nav > .logo > img {
@@ -42,7 +42,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid red;
+            
             
         }
         .contenedor-nav > .nav > a {
@@ -50,7 +50,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid red;
+            
             text-decoration: none;
             font-family: "Helvetica", Sans-serif;
             line-height: 22px;
@@ -68,14 +68,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid red;
+            
         }
         .contenedor-header > .header-text {
             width: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid red;
+            
             flex-direction: column;
             color: #121F48;
 
@@ -86,7 +86,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid red;
+            
             flex-direction: column;
             background: #E4207B;
             text-transform: uppercase;
@@ -103,12 +103,41 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid red;
+            
         }
         .contenedor-header > .header-img > img {
             width: 100%;
 
         }
+		.contenedor-header > .header-img > form {
+            width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			padding: 20px 20px 0px 20px;
+
+        }
+		.contenedor-header > .header-img > form > input {
+			margin-bottom: 20px;
+			border-radius: 30px;
+			padding: 20px;
+			width: 80%;
+			border: 1px solid grey
+		}
+		.contenedor-header > .header-img > form > input[type="submit"] {
+			margin-bottom: 20px;
+			border-radius: 30px;
+			padding: 20px;
+			width: 85%;
+			background: #E4207B;
+			border: none;
+			color: white;
+			font-size: 16px;
+			font-weight: 800;
+			
+		}
+		
         /*end header*/ 
 
         /*body*/
@@ -263,24 +292,30 @@
 		</div>
 		<div class="nav">
 			<a href="">INICIO</a>
-			<a href="">SEO</a>
-			<a href="">PPC</a>
-			<a href="">¡CONTRATANOS!</a>
+			<a href="">SERVICIOS</a>
+			<a href="">PORTAFOLIO</a>
+			<a href="">CONTÁCTANOS</a>
 		</div>
 	</div>
 
 	<div class="contenedor-header">
 		<div class="header-text">
 			<h1>
-				titulo
+				¡Te ayudamos a encontrar clientes ideales!
 			</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit
+				No somos una agencia, somos un colectivo de talentos profesionales y expertos  que llevarán tu marca a otro nivel.
 			</p>
-			<a href="">link</a>
+			<a href="#contacto">CONTÁCTANOS</a>
 		</div>
 		<div class="header-img">
-			<img src="header.svg">
+			<!--<img src="header.svg">-->
+			<form action="form.php" method="post">
+				<input type="text" name="nombre" placeholder="nonbre">
+				<input type="text" name="nombre" placeholder="nonbre">
+				<input type="text" name="nombre" placeholder="nonbre">
+				<input type="submit" value="ENVIAR">
+			</form>
 		</div>
 	</div>
 
