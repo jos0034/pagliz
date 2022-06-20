@@ -35,16 +35,23 @@
         <div class="contenedor-header-text">
             <div class="contenedor-textos">
                 <h1>
-                    titulo
+                    ¡Te ayudamos a encontrar clientes ideales!
                 </h1>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    No somos una agencia, somos un colectivo de talentos profesionales y expertos que llevarán tu marca a otro nivel.
                 </p>
                 <a href="#">CONTÁCTANOS</a>
             </div>
         </div>
         <div class="contenedor-header-img">
-            <img src="header.svg" alt="">
+            <!--<img src="header.svg" alt="">-->
+            <form action="enviar.php" method="post">
+                <input type="text" name="nombre" placeholder="NOMBRE">
+				<input type="text" name="marca" placeholder="MARCA O EMPRESA">
+				<input type="text" name="telefono" placeholder="TÉLEFONO">
+				<input type="text" name="correo" placeholder="CORREO ELECTRÓNICO">
+				<input type="submit" value="ENVIAR">
+            </form>
         </div>
     </div>
     <!--end header-->
@@ -62,7 +69,7 @@
         <div class="contenedor-servicios-targetas-1">
             <img src="seccion-1.svg" alt="">
             <h2>
-                SERVICIOS
+                Le damos vida a tu marca (BRANDING)
             </h2>
             <div class="vermas">
                <a href="">+</a> 
@@ -71,7 +78,7 @@
         <div class="contenedor-servicios-targetas-1">
             <img src="seccion-1.svg" alt="">
             <h2>
-                SERVICIOS
+                Desarrollamos tu sitio web
             </h2>
             <div class="vermas">
                 <a href="">+</a> 
@@ -80,7 +87,7 @@
         <div class="contenedor-servicios-targetas-1">
             <img src="seccion-1.svg" alt="">
             <h2>
-                SERVICIOS
+                Estrategia y diseño de contenido
             </h2>
             <div class="vermas">
                 <a href="">+</a> 
@@ -89,7 +96,7 @@
         <div class="contenedor-servicios-targetas-1">
             <img src="seccion-1.svg" alt="">
             <h2>
-                SERVICIOS
+                Community Manager
             </h2>
             <div class="vermas">
                 <a href="">+</a> 
@@ -101,7 +108,7 @@
         <div class="contenedor-servicios-targetas-1">
             <img src="seccion-1.svg" alt="">
             <h2>
-                SERVICIOS
+                Social Media Ads (Estrategias personalizadas)
             </h2>
             <div class="vermas">
                 <a href="">+</a> 
@@ -110,7 +117,7 @@
         <div class="contenedor-servicios-targetas-1">
             <img src="seccion-1.svg" alt="">
             <h2>
-                SERVICIOS
+                Google Ads
             </h2>
             <div class="vermas">
                 <a href="">+</a> 
@@ -119,7 +126,7 @@
         <div class="contenedor-servicios-targetas-1">
             <img src="seccion-1.svg" alt="">
             <h2>
-                SERVICIOS
+                Producción Audiovisual
             </h2>
             <div class="vermas">
                 <a href="">+</a> 
@@ -128,7 +135,7 @@
         <div class="contenedor-servicios-targetas-1">
             <img src="seccion-1.svg" alt="">
             <h2>
-                SERVICIOS
+                Cobertura de eventos
             </h2>
             <div class="vermas">
                 <a href="">+</a> 
@@ -153,7 +160,7 @@
                 NOMBRE
             </p>
             <p>
-                fotografía
+                branding
             </p>
             <a href="">book</a>
         </div>
@@ -163,7 +170,7 @@
                 NOMBRE
             </p>
             <p>
-                fotografía
+                web
             </p>
             <a href="">book</a>
         </div>
@@ -173,7 +180,7 @@
                 NOMBRE
             </p>
             <p>
-                fotografía
+                cm
             </p>
             <a href="">book</a>
         </div>
@@ -183,7 +190,7 @@
                 NOMBRE
             </p>
             <p>
-                fotografía
+                social media
             </p>            
             <a href="">book</a>
         </div>
@@ -198,7 +205,7 @@
                 NOMBRE
             </p>
             <p>
-                fotografía
+                ads
             </p>
             <a href="">book</a>
         </div>
@@ -208,7 +215,7 @@
                 NOMBRE
             </p>
             <p>
-                fotografía
+                videos
             </p>
             <a href="">book</a>
         </div>
@@ -218,7 +225,7 @@
                 NOMBRE
             </p>
             <p>
-                fotografía
+                cv
             </p>
             <a href="">book</a>
         </div>
@@ -230,7 +237,24 @@
             <p>
                 fotografía
             </p>            
-            <a href="">book</a>
+            <!--<a href="">book</a>-->
+            <!--modal-->
+            <a href="#modal-1">book</a>
+            
+
+            <div id="modal-1" class="modalDialog">
+                <div>
+                    <!--<a href="#close" title="Close" class="close">x</a>
+                    <h2>Modal Box</h2>
+                    <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+                    <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>-->
+                    
+                    <!--slider-->
+                    <!--end slider-->
+                </div>
+            </div>
+            
+            <!--end modal-->
         </div>
         
         
@@ -248,7 +272,11 @@
             </div>
             <div class="form">
                 <form action="enviar.php" method="post">
-                    <input type="text" placeholder="NOMBRE">
+                    <input type="text" name="nombre" placeholder="NOMBRE">
+                    <input type="text" name="marca" placeholder="MARCA O EMPRESA">
+                    <input type="text" name="telefono" placeholder="TÉLEFONO">
+                    <input type="text" name="correo" placeholder="CORREO ELECTRÓNICO">
+                    <input type="submit" value="ENVIAR">
                 </form>
             </div>
         </div>
@@ -257,16 +285,24 @@
 
     <!--footer-->
     <div class="contenedor-footer">
+        <div class="contenedor-footer__logo">
+            <img src="logo-pregonera.png" alt="logo pregonera">
+        </div>
         <div class="contenedor-footer__map">
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
+            <a href="">INICIO</a>
+            <a href="">SERVICIOS</a>
+            <a href="">PORTAFOLIO</a>
+            <a href="">CONTÁCTANOS</a>
         </div>
         <div class="contenedor-footer__redes-contac">
-            <p>
+            <!--<p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quibusdam quos facere quasi laudantium eius, repudiandae, ipsam nulla laborum odio, porro nesciunt voluptatum. Animi molestias eos neque qui natus eveniet.
-            </p>
+            </p>-->
+            <a href="fb.com/pregonera.mktco"><img src="face.png" width="50px" height="50px" alt="facebook"></a>
+            <a href="https://www.instagram.com/pregonera.mktco/"><img src="insta.png" width="50px" height="50px" alt="instagram"></a>
+            <a href="
+            https://api.whatsapp.com/send?phone=555560742012"><img src="whats.png" width="50px" height="50px" alt="whatsapp"></a>
+            <a href="contacto@pregonera.com.mx"><img src="mail.png" width="50px" height="50px" alt="mail"></a>
         </div>
     </div>
     <!--end footer-->
