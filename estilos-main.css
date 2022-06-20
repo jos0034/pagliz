@@ -239,6 +239,20 @@ html {
 
 /*end portafolio*/
 
+/*portafolio galeria*/
+.contenedor-portafolio-galeria { 
+    display: flex;
+    border: 1px solid red;
+}
+.grid-galeria {
+
+}
+.grid-galeria > img {
+    width: 100%;
+}
+
+/*end portafolio galeria*/
+
 /*banner slogan*/
 .contenedor-banner-slogan {
     width: 100%;
@@ -302,7 +316,7 @@ html {
 
 /*footer*/
 .contenedor-footer {
-    background: rgb(46, 46, 46);
+    /*background: rgb(46, 46, 46);*/
     width: 100%;
     height: auto;
     display: flex;
@@ -327,6 +341,7 @@ html {
     margin-left: 20px;
     color: grey;
     text-decoration: none;
+    font-size: 10px;
 }
 .contenedor-footer__redes-contac {
     border: 1px solid red;
