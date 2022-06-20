@@ -245,7 +245,8 @@ html {
     border: 1px solid red;
 }
 .grid-galeria {
-
+    flex: 25%;/*esto es para repartir el spacio del grid en este caso en 4 columnas*/
+    padding: 5px;
 }
 .grid-galeria > img {
     width: 100%;
@@ -261,6 +262,7 @@ html {
     background: url('photo-of-happy-young-caucasian-business-woman-wearing-glasses-standing-over-beige-wall.jpg');
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     margin-top: 100px;
     
     
