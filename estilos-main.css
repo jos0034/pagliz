@@ -3,8 +3,20 @@
     padding: 0;
 }
 
+/*import fonts*/
+@font-face {
+    font-family: font-general;
+    src: url(FONTS/Menlo-Regular.ttf);
+}
+@font-face {
+    font-family: font-titulos;
+    src: url(FONTS/Mosherif_High.ttf);
+}
+/*end import fonts*/
+
 html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: font-general;
 }
 /*nav*/
 .contenedor-nav {
@@ -28,7 +40,7 @@ html {
     border: 1px solid red;
     width: 240px;
     height: 240px;
-    display: none;
+    
 
 }
 .contenedor-nav__links {
@@ -40,7 +52,9 @@ html {
 }
 .contenedor-nav__links > a {
     border: 1px solid red;
-    padding: 20px
+    padding: 20px;
+    text-decoration: none;
+
 }
 /*end nav*/
 
@@ -73,6 +87,21 @@ html {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    
+}
+.contenedor-header > .contenedor-header-text > .contenedor-textos > h1 {
+    border: 1px solid red;
+    font-family: font-titulos;
+    font-size: 80px;
+    line-height: 1.5; /*espacio entre salto de linea*/
+    letter-spacing: 5px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+.contenedor-header > .contenedor-header-text > .contenedor-textos > p {
+    font-family: font-general;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
 .contenedor-textos > a {
     border: 1px solid red;
@@ -81,6 +110,8 @@ html {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    font-family: font-general;
+    font-weight: 900;
 }
 .contenedor-header-img > img {
     width: 100%;
@@ -100,6 +131,7 @@ html {
     flex-direction: column;
     padding: 20px 20px 0px 20px;
     width: 100%;
+    
 }
 .contenedor-header-img > form > input {
     border-radius: 5px;
@@ -107,11 +139,16 @@ html {
     width: 91.5%;
     margin: 0px 0px 30px 0px;
     border: 1px solid grey;
+    font-family: font-general;
+        
 }
 .contenedor-header-img > form > input[type="submit"] {
     width: 100%;
     background: rgba(219 181 106 / 100%);
     border: none;
+    font-family: font-general;
+    font-weight: 900;
+
 }
 /*end header*/
 
@@ -131,6 +168,12 @@ html {
     align-items: center;
     justify-content: flex-end;
     padding: 10px 40px 10px 0px; 
+}
+.contenedor-servicios-titulo > h2 {
+    font-family: font-titulos;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-weight: 100px;
 }
 .contenedor-servicios-targetas {
     /*border: 1px solid red;*/
@@ -191,10 +234,12 @@ html {
     justify-content: flex-start;
     background: rgba(0 0 0 / 100%);
     margin-left: auto;
+    margin-bottom: 100px;
 }
 .contenedor-portafolio > .contenedor-portafolio-titulo {
     color: white;
     padding: 10px 0px 10px 40px;
+
 }
 .contenedor-img-equipo {
     border: 1px solid red;
