@@ -627,14 +627,6 @@ color: #EA4436;
         .nav__input:checked + .nav__menu  {
             clip-path: circle(100% at center);
         }
-        .nav__menu2 {
-            clip-path: circle(0 at center);
-            transition: clip-path 1s ease-in-out;
-        }
-        .nav__menu2 {
-            clip-path: circle(100% at center);
-            
-        }
         .nav__label {
             display: block;
             cursor: pointer;
