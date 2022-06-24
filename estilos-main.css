@@ -15,8 +15,10 @@
 /*end import fonts*/
 
 html {
+    scroll-behavior: smooth;
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-    font-family: font-general;
+    /*font-family: font-general;*/
+    font-family: "Helvetica";
 }
 /*nav*/
 .contenedor-nav {
@@ -56,6 +58,8 @@ html {
     border: 1px solid red;
     padding: 20px;
     text-decoration: none;
+    font-family: "Helvetica";
+    color: black;
 
 }
 /*end nav*/
@@ -140,7 +144,8 @@ html {
     margin-bottom: 25px;
 }
 .contenedor-header > .contenedor-header-text > .contenedor-textos > p {
-    font-family: font-general;
+    /*font-family: font-general;*/
+    font-family: "Helvetica";
     line-height: 1.5;
     margin-bottom: 25px;
 }
@@ -151,7 +156,8 @@ html {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    font-family: font-general;
+    /*font-family: font-general;*/
+    font-family: "Helvetica";
     font-weight: 900;
 }
 .contenedor-header-img > img {
@@ -180,14 +186,16 @@ html {
     width: 91.5%;
     margin: 0px 0px 30px 0px;
     border: 1px solid grey;
-    font-family: font-general;
+    /*font-family: font-general;*/
+    font-family: "Helvetica";
         
 }
 .contenedor-header-img > form > input[type="submit"] {
     width: 100%;
     background: rgba(219 181 106 / 100%);
     border: none;
-    font-family: font-general;
+    /*font-family: font-general;*/
+    font-family: "Helvetica";
     font-weight: 900;
     font-size: 16px;
 
@@ -212,9 +220,11 @@ html {
     padding: 10px 40px 10px 0px; 
 }
 .contenedor-servicios-titulo > h2 {
-    font-family: font-titulos;
+    /*font-family: font-titulos;*/
+    font-family: "Helvetica";
     letter-spacing: 10px;
-    font-size: 60px;
+    /*font-size: 60px;*/
+    font-size: 32px;
     font-weight: 100px;
 }
 .contenedor-servicios-targetas {
@@ -255,7 +265,7 @@ html {
     /*height: 150px;*/
     height: 100px;
     /*font-size: 24px;*/
-    font-size: 16px;
+    
 }
 .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > .vermas {
     border: 5px solid rgba(219 181 106 / 100%);
@@ -292,9 +302,10 @@ html {
 
 }
 .contenedor-portafolio > .contenedor-portafolio-titulo > h1 {
-    font-family: font-titulos;
+    /*font-family: font-titulos;*/
+    font: "Helvetica";
     letter-spacing: 10px;
-    font-size: 60px;
+    /*font-size: 60px;*/
     font-weight: 100px;
 }
 .contenedor-img-equipo {
@@ -354,7 +365,8 @@ html {
     width: 100%;
 }
 .grid-galeria > h3 {
-    margin: 15px 0px;   
+    margin: 15px 0px; 
+    font-weight: 100;  
 }
 .grid-galeria > h3 > span {
     font-size: 16px;
@@ -647,6 +659,11 @@ color: #EA4436;
     /*portafolio*/
     .contenedor-portafolio {
         width: 100%;
+    }
+    .contenedor-portafolio > .contenedor-portafolio-titulo {
+        color: white;
+        padding: 10px 0px 10px 10px;
+    
     }
     .contenedor-portafolio-galeria {
         flex-direction: column;
