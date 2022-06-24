@@ -60,6 +60,45 @@ html {
 }
 /*end nav*/
 
+/*nav movil*/
+.nav-resposive {
+    background: white;
+    height: 80px;
+    color: white;
+    display: none;
+}
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    
+}
+.nav__logo  {
+    width: 70px;
+    height: 70px;
+}
+.nav__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+.nav__item {
+    color: black;
+    text-decoration: none;
+}
+.nav__input:checked + .nav__menu {
+    /*background: tomato;*/
+    background: rgba(219 181 106 / 100%);;
+}
+.nav__label , .nav__input {
+    display: none;
+    
+}
+/*end nav movil*/
+
 /*header*/
 .contenedor-header {
     /*border: 1px solid red;*/
@@ -180,11 +219,12 @@ html {
 }
 .contenedor-servicios-targetas {
     /*border: 1px solid red;*/
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 100px auto;
+    
 }
 .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 {
     width: 100%;
@@ -199,12 +239,14 @@ html {
     
 }
 .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > img {
-    width: 80%;
+    width: 100%;
     border: 1px solid rgb(189, 189, 189);
     border-radius: 50%;
     margin-bottom: 50px;
     height: 182px;
     object-fit: cover;
+    max-width: 182px;
+    max-height: 182px;
 
 }
 .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > h2 {
@@ -302,6 +344,7 @@ html {
 .contenedor-portafolio-galeria { 
     display: flex;
     border: 1px solid red;
+    
 }
 .grid-galeria {
     flex: 25%;/*esto es para repartir el spacio del grid en este caso en 4 columnas*/
@@ -309,6 +352,14 @@ html {
 }
 .grid-galeria > img {
     width: 100%;
+}
+.grid-galeria > h3 {
+    margin: 15px 0px;   
+}
+.grid-galeria > h3 > span {
+    font-size: 16px;
+    color: grey;
+    
 }
 
 /*end portafolio galeria*/
@@ -325,6 +376,7 @@ html {
     margin-top: 100px;
     
     
+    
 }
 .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner {
     background: rgba(0 0 0 / 70%);
@@ -333,6 +385,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px 0px;
+
 }
 .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .text {
     border: 1px solid red;
@@ -467,11 +521,138 @@ color: #EA4436;
 /*end modal*/
 
 /*media querys*/
-@media all and (max-width: 360px) {
+@media all and (max-width: 700px) {
     .contenedor-nav {
-        border: 10px solid red;
+        display: none;
+    }
+    /*nav responsive*/
+        .nav-resposive {
+            background: white;
+            height: 80px;
+            color: white;
+            display: block;
+            position: fixed;
+            width: 100%;
+            margin-top: 0px;
+            
+        }   
+        .nav__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }     
+        .nav__menu {
+            position: fixed;
+            top: 80px;
+            bottom: 0;
+            /*background: #f08080;*/
+            background: rgba(219 181 106 / 100%);;
+            width: 100%;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+        }
+        .nav__input:checked + .nav__menu {
+            clip-path: circle(100% at center);
+        }
+        .nav__label {
+            display: block;
+            cursor: pointer;
+        }
+    /*nav responsive*/
+    
+    /*servicios*/
+    .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > img {
+        max-width: 92px;
+        max-height: 92px;
+        width: 100%;
     
     }
+    /*end servicios*/
+}
+@media all and (max-width: 360px) {
+    .contenedor-nav {
+        display: none;
+    }
+    /*nav responsive*/
+        .nav-resposive {
+            background: white;
+            height: 80px;
+            color: white;
+            display: block;
+            position: fixed;
+            width: 100%;
+            margin-top: -80px;
+        }        
+        .nav__menu {
+            position: fixed;
+            top: 80px;
+            bottom: 0;
+            /*background: #f08080;*/
+            background: rgba(219 181 106 / 100%);;
+            width: 100%;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+        }
+        .nav__input:checked + .nav__menu {
+            clip-path: circle(100% at center);
+        }
+        .nav__label {
+            display: block;
+            cursor: pointer;
+        }
+    /*nav responsive*/
+    
+    /*header*/
+    .contenedor-header {
+        flex-direction: column;
+        height: auto;
+        margin-top: 80px;
+        
+    }
+    /*end header*/
+
+    /*servicios*/    
+    .contenedor-servicios {
+        width: 100%;
+    }
+    .contenedor-servicios-targetas {
+        flex-direction: column;
+    }
+    .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > img {
+        max-width: 182px;
+        max-height: 182px;
+        width: 100%;
+    
+    }
+    /*end serivicios*/
+
+    /*portafolio*/
+    .contenedor-portafolio {
+        width: 100%;
+    }
+    .contenedor-portafolio-galeria {
+        flex-direction: column;
+    }
+    /*end portafolio*/
+
+    /*banner slogan*/
+    .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner {
+        flex-direction:column-reverse;
+        padding: 50px 0px;
+    
+    }
+    /*end banner slogan*/
 }
 /*end media querys*/
 
