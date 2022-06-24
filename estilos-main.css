@@ -640,6 +640,20 @@ color: #EA4436;
         margin-top: 80px;
         
     }
+    .contenedor-textos {
+        align-items: center;
+        
+        
+    }
+    .contenedor-header > .contenedor-header-text > .contenedor-textos > h1 {
+        font-size: 40px;
+        margin-left: 25px;
+    }
+    .contenedor-header > .contenedor-header-text > .contenedor-textos > p {
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
     /*end header*/
 
     /*servicios*/    
