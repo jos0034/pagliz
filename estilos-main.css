@@ -22,7 +22,7 @@ html {
 }
 /*nav*/
 .contenedor-nav {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -35,11 +35,11 @@ html {
     display: flex;
     align-items: center;
     /*justify-content: center;*/
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
 }
 .contenedor-nav__logo > img {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /*width: 240px;
     height: 240px;*/
     width: 140px;
@@ -51,11 +51,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
 }
 .contenedor-nav__links > a {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     padding: 20px;
     text-decoration: none;
     font-family: "Helvetica";
@@ -88,7 +88,7 @@ html {
     display: grid;
     grid-auto-flow: column;
     gap: 3em;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 100vh;
 }
 .nav__item {
@@ -125,11 +125,11 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 
 }
 .contenedor-textos {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -137,7 +137,7 @@ html {
     
 }
 .contenedor-header > .contenedor-header-text > .contenedor-textos > h1 {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     font-family: font-titulos;
     font-size: 80px;
     line-height: 1.5; /*espacio entre salto de linea*/
@@ -152,7 +152,7 @@ html {
     margin-bottom: 25px;
 }
 .contenedor-textos > a {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     background: rgba(219 181 106 / 100%);
     color: black;
     text-decoration: none;
@@ -169,11 +169,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
 }
 .contenedor-header-img > form {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +206,7 @@ html {
 
 /*servicios*/
 .contenedor-servicios {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 60%;
     display: flex;
     align-items: center;
@@ -214,7 +214,7 @@ html {
     background: rgba(219 181 106 / 100%);
 }
 .contenedor-servicios-titulo {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -246,7 +246,7 @@ html {
     flex-direction: column;
     text-align: center;
     padding: 20px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 500px;
     
 }
@@ -262,7 +262,7 @@ html {
 
 }
 .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > h2 {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin-bottom: 50px;
     /*height: 150px;*/
     height: 100px;
@@ -313,7 +313,7 @@ html {
     
 }
 .contenedor-img-equipo {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -325,11 +325,11 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin: 100px 50px 0px 0px;
 }
 .contenedor-img-equipo > .contenedor-img-equipo-cirulos > img {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     border-radius: 50%;
     object-fit: cover;
     filter: grayscale(100%);
@@ -358,7 +358,7 @@ html {
 /*portafolio galeria*/
 .contenedor-portafolio-galeria { 
     display: flex;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     
 }
 .grid-galeria {
@@ -384,7 +384,7 @@ html {
 .contenedor-banner-slogan {
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     background: url('photo-of-happy-young-caucasian-business-woman-wearing-glasses-standing-over-beige-wall.jpg');
     background-size: cover;
     background-position: center center;
@@ -405,7 +405,7 @@ html {
 
 }
 .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .text {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -419,7 +419,7 @@ html {
     text-align: center;
 }
 .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .form {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
 
 }
@@ -461,7 +461,7 @@ html {
     height: 240px;
 }
 .contenedor-footer__map {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -475,7 +475,7 @@ html {
     font-size: 10px;
 }
 .contenedor-footer__redes-contac {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -678,7 +678,7 @@ color: #EA4436;
     
     }
     .contenedor-portafolio > .contenedor-portafolio-titulo > h1 {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         font-size: 29px;
         
     }
