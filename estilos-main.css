@@ -567,10 +567,14 @@ color: #EA4436;
     /*nav responsive*/
     
     /*servicios*/
+    .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 {
+        padding: 0px;
+    }
     .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > img {
         max-width: 92px;
         max-height: 92px;
         width: 100%;
+        
     
     }
     /*end servicios*/
@@ -629,6 +633,9 @@ color: #EA4436;
     .contenedor-servicios-targetas {
         flex-direction: column;
     }
+    .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 {
+        padding: 0px;
+    }
     .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > img {
         max-width: 182px;
         max-height: 182px;
@@ -644,12 +651,28 @@ color: #EA4436;
     .contenedor-portafolio-galeria {
         flex-direction: column;
     }
+    .grid-galeria {
+        padding: 0px;
+    }
     /*end portafolio*/
 
     /*banner slogan*/
     .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner {
         flex-direction:column-reverse;
         padding: 50px 0px;
+    
+    }
+    .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .form > form > input {
+        width: 80%;        
+        margin: 20px 0px;
+    }
+    .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .form > form > input[type="submit"] {
+        width: 90%;
+        border: none;
+        background: rgba(219 181 106 / 100%);
+    }
+    .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .text > p {
+        font-size: 50px;
     
     }
     /*end banner slogan*/
