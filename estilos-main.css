@@ -224,8 +224,8 @@ html {
     font-family: "Helvetica";
     letter-spacing: 10px;
     /*font-size: 60px;*/
-    font-size: 32px;
-    font-weight: 100px;
+    font-size: 29px;
+    font-weight: 100;
 }
 .contenedor-servicios-targetas {
     /*border: 1px solid red;*/
@@ -303,10 +303,12 @@ html {
 }
 .contenedor-portafolio > .contenedor-portafolio-titulo > h1 {
     /*font-family: font-titulos;*/
-    font: "Helvetica";
+    font-family: "Helvetica";
     letter-spacing: 10px;
     /*font-size: 60px;*/
-    font-weight: 100px;
+    font-weight: 100;
+    
+    
 }
 .contenedor-img-equipo {
     border: 1px solid red;
@@ -662,8 +664,13 @@ color: #EA4436;
     }
     .contenedor-portafolio > .contenedor-portafolio-titulo {
         color: white;
-        padding: 10px 0px 10px 10px;
+        padding: 10px 10px 10px 10px;
     
+    }
+    .contenedor-portafolio > .contenedor-portafolio-titulo > h1 {
+        border: 1px solid red;
+        font-size: 29px;
+        
     }
     .contenedor-portafolio-galeria {
         flex-direction: column;
