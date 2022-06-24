@@ -88,6 +88,8 @@ html {
     display: grid;
     grid-auto-flow: column;
     gap: 3em;
+    border: 1px solid red;
+    height: 100vh;
 }
 .nav__item {
     color: black;
@@ -622,8 +624,16 @@ color: #EA4436;
             clip-path: circle(0 at center);
             transition: clip-path 1s ease-in-out;
         }
-        .nav__input:checked + .nav__menu {
+        .nav__input:checked + .nav__menu  {
             clip-path: circle(100% at center);
+        }
+        .nav__menu2 {
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+        }
+        .nav__menu2 {
+            clip-path: circle(100% at center);
+            
         }
         .nav__label {
             display: block;
