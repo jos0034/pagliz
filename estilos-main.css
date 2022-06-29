@@ -38,7 +38,7 @@ html {
     /*border: 1px solid red;*/
     width: 100%;
 }
-.contenedor-nav__logo > img {
+.contenedor-nav__logo > a > img {
     /*border: 1px solid red;*/
     /*width: 240px;
     height: 240px;*/
@@ -175,11 +175,16 @@ html {
 .contenedor-header-img > form {
     /*border: 1px solid red;*/
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding: 20px 20px 0px 20px;
     width: 100%;
+    
+}
+.contenedor-header-img > form > h2 {
+    margin-bottom: 30px;
+    font-size: 16px;
     
 }
 .contenedor-header-img > form > input {
@@ -544,6 +549,76 @@ color: #EA4436;
 }
 /*end modal*/
 
+
+/*seccion branding*/
+
+    /*pasos*/
+    .contenedor-comolohacemos {
+        /*border: 1px solid red;*/
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(219 181 106 / 100%);
+    }
+    .contenedor-comolohacemos-titulo {
+        /*border: 1px solid red;*/
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 40px 10px 0px; 
+    }
+    .contenedor-comolohacemos-titulo > h2 {
+        font-family: font-titulos;
+        /*font-family: "Helvetica";*/
+        letter-spacing: 10px;
+        /*font-size: 60px;*/
+        font-size: 29px;
+        font-weight: 100;
+    }
+    
+    .contenedor-pasos {
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0px;
+    }
+    .contenedor-pasos-tarjeta {
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+    .contenedor-numero {
+        border: 10px solid rgba(219 181 106 / 100%);;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .contenedor-numero > p {
+        font-size: 54px;
+    }
+    .contenedor-contenenido {
+        width: 100%;
+        
+    }
+    .contenedor-contenenido > p {
+        padding: 20px;
+        font-size: 16px;
+    }
+    /*end pasos*/
+
+/*end seccion branding*/
+
+
 /*media querys*/
 @media all and (max-width: 700px) {
     .contenedor-nav {
@@ -724,6 +799,83 @@ color: #EA4436;
     
     }
     /*end banner slogan*/
+
+    /*seccion branding*/
+
+        /*pasos*/
+        .contenedor-comolohacemos {
+            /*border: 1px solid red;*/
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(219 181 106 / 100%);
+            margin-top: 50px;
+        }
+        .contenedor-comolohacemos-titulo {
+            /*border: 1px solid red;*/
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px 10px 10px 0px; 
+        }
+        .contenedor-comolohacemos-titulo > h2 {
+            font-family: font-titulos;
+            /*font-family: "Helvetica";*/
+            letter-spacing: 10px;
+            /*font-size: 60px;*/
+            font-size: 29px;
+            font-weight: 100;
+        }
+        
+        .contenedor-pasos {
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            flex-direction: column;
+        }
+        .contenedor-pasos-tarjeta {
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex-direction: column;
+
+        }
+        .contenedor-numero {
+            border: 10px solid rgba(219 181 106 / 100%);;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .margin-movil-top {
+            margin-top: 100px;
+        }
+        .margin-movil-bottom {
+            margin-bottom: 100px;
+        }
+        .contenedor-numero > p {
+            font-size: 54px;
+        }
+        .contenedor-contenenido {
+            width: 100%;
+            
+        }
+        .contenedor-contenenido > p {
+            padding: 20px;
+            font-size: 16px;
+        }
+        /*end pasos*/
+
+    /*end seccion branding*/
 }
 /*end media querys*/
 
