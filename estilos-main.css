@@ -679,6 +679,205 @@ color: #EA4436;
     }
     /*end servicios*/
 }
+@media all and (max-width: 466px) {
+    .contenedor-nav {
+        display: none;
+    }
+    /*nav responsive*/
+        .nav-resposive {
+            background: white;
+            height: 80px;
+            color: white;
+            display: block;
+            position: fixed;
+            width: 100%;
+            margin-top: -80px;
+        }        
+        .nav__menu {
+            position: fixed;
+            top: 80px;
+            bottom: 0;
+            /*background: #f08080;*/
+            background: rgba(219 181 106 / 100%);;
+            width: 100%;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+        }
+        .nav__input:checked + .nav__menu  {
+            clip-path: circle(100% at center);
+        }
+        .nav__label {
+            display: block;
+            cursor: pointer;
+        }
+    /*nav responsive*/
+    
+    /*header*/
+    .contenedor-header {
+        flex-direction: column;
+        height: auto;
+        margin-top: 80px;
+        
+    }
+    .contenedor-textos {
+        align-items: center;
+        
+        
+    }
+    .contenedor-header > .contenedor-header-text > .contenedor-textos > h1 {
+        font-size: 40px;
+        margin-left: 25px;
+    }
+    .contenedor-header > .contenedor-header-text > .contenedor-textos > p {
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    /*end header*/
+
+    /*servicios*/    
+    .contenedor-servicios {
+        width: 100%;
+    }
+    .contenedor-servicios-targetas {
+        flex-direction: column;
+    }
+    .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 {
+        padding: 0px;
+    }
+    .contenedor-servicios-targetas > .contenedor-servicios-targetas-1 > img {
+        max-width: 182px;
+        max-height: 182px;
+        width: 100%;
+    
+    }
+    /*end serivicios*/
+
+    /*portafolio*/
+    .contenedor-portafolio {
+        width: 100%;
+    }
+    .contenedor-portafolio > .contenedor-portafolio-titulo {
+        color: white;
+        padding: 10px 10px 10px 10px;
+    
+    }
+    .contenedor-portafolio > .contenedor-portafolio-titulo > h1 {
+        /*border: 1px solid red;*/
+        font-size: 29px;
+        
+    }
+    .contenedor-portafolio-galeria {
+        flex-direction: column;
+    }
+    .grid-galeria {
+        padding: 0px;
+    }
+    /*end portafolio*/
+
+    /*banner slogan*/
+    .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner {
+        flex-direction:column-reverse;
+        padding: 50px 0px;
+    
+    }
+    .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .form > form > input {
+        width: 80%;        
+        margin: 20px 0px;
+    }
+    .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .form > form > input[type="submit"] {
+        width: 90%;
+        border: none;
+        background: rgba(219 181 106 / 100%);
+    }
+    .contenedor-banner-slogan > .contenedor-banner-slogan-subbanner > .text > p {
+        font-size: 50px;
+    
+    }
+    /*end banner slogan*/
+
+    /*seccion branding*/
+
+        /*pasos*/
+        .contenedor-comolohacemos {
+            /*border: 1px solid red;*/
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(219 181 106 / 100%);
+            margin-top: 50px;
+        }
+        .contenedor-comolohacemos-titulo {
+            /*border: 1px solid red;*/
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px 10px 10px 0px; 
+        }
+        .contenedor-comolohacemos-titulo > h2 {
+            font-family: font-titulos;
+            /*font-family: "Helvetica";*/
+            letter-spacing: 10px;
+            /*font-size: 60px;*/
+            font-size: 29px;
+            font-weight: 100;
+        }
+        
+        .contenedor-pasos {
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            flex-direction: column;
+        }
+        .contenedor-pasos-tarjeta {
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex-direction: column;
+
+        }
+        .contenedor-numero {
+            border: 10px solid rgba(219 181 106 / 100%);;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .margin-movil-top {
+            margin-top: 100px;
+        }
+        .margin-movil-bottom {
+            margin-bottom: 100px;
+        }
+        .contenedor-numero > p {
+            font-size: 54px;
+        }
+        .contenedor-contenenido {
+            width: 100%;
+            
+        }
+        .contenedor-contenenido > p {
+            padding: 20px;
+            font-size: 16px;
+        }
+        /*end pasos*/
+
+    /*end seccion branding*/
+}
 @media all and (max-width: 360px) {
     .contenedor-nav {
         display: none;
